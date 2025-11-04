@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import logoImage from "/logo.png"
 import { useAuthContext } from "@/context/AuthContext"
 import { CircleUser } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu"
@@ -29,7 +30,7 @@ const Header = () => {
         <div className="sticky top-0 z-50 w-full bg-background border-b-2 border-b-orange-500">
             <div className="max-w-6xl mx-auto px-3 py-2 flex justify-between gap-4 h-21">
                 <Link className="flex items-center cursor-pointer" to={"/"}>
-                    <img src="/logo.png" className="h-14"/>
+                    <img src={logoImage} className="h-14"/>
                     <span className="text-orange-500 font-bold text-xl max-md:text-lg -ml-4">FDel App</span>
                 </Link>
 
